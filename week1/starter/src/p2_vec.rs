@@ -31,7 +31,7 @@ pub fn vec4_mul(a: Vec4, b: Vec4) -> Vec4 {
 /// Run `cargo test vec4_select` to check your answer.
 pub fn vec4_select(mask: Mask4, vtrue: Vec4, vfalse: Vec4) -> Vec4 {
   let mut a: Vec4 = [0.0; 4];
-  for i in (0..4) {
+  for i in 0..4 {
     if mask[i] {
       a[i] = vtrue[i];
     } else {
@@ -46,7 +46,7 @@ pub fn vec4_select(mask: Mask4, vtrue: Vec4, vfalse: Vec4) -> Vec4 {
 /// Run `cargo test vec4_gt` to check your answer.
 pub fn vec4_gt(a: Vec4, b: Vec4) -> Mask4 {
   let mut mask: Mask4 = [false; 4];
-  for i in (0..4) {
+  for i in 0..4 {
     if a[i] > b[i] {
       mask[i] = true;
     }
